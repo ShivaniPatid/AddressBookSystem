@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,25 +9,31 @@ namespace AddressBook
 {
     public class Contacts
     {
-        
-        public string firstName;
-        public string lastName;
-        public string address;
-        public string city;
-        public string state;
-        public string zip;
-        public string phoneNumber;
-        public string email;
+
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Address { get; set; }
+        public string City { get; set; }
+        public string State { get; set; }
+        public string Zip { get; set; }
+        public string PhoneNumber { get; set; }
+        public string Email { get; set; }
+
         public Contacts(string firstName, string lastName, string address, string city, string state, string zip, string phoneNumber, string email)
         {
-            this.firstName = firstName;
-            this.lastName = lastName;
-            this.address = address;
-            this.city = city;
-            this.state = state;
-            this.zip = zip;
-            this.phoneNumber = phoneNumber;
-            this.email = email;
+            FirstName = firstName;
+            LastName = lastName;
+            Address = address;
+            City = city;
+            State = state;
+            Zip = zip;
+            PhoneNumber = phoneNumber;
+            Email = email;
+        }
+    
+        public void Show()
+        {
+            Console.WriteLine(FirstName + "\t\t" + LastName + "\t\t" + Address + "\t\t" + City + "\t\t" + State + "\t\t" + Zip + "\t\t" + PhoneNumber + "\t\t" + Email);
         }
     }
 }
