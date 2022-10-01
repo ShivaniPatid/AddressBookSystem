@@ -1,0 +1,6 @@
+FirstName,LastName,Address,City,State,Zip,PhoneNumber,Email
+Shivani,Patidar,11 Street,Ujjain,Madhya Pradesh,456060,8897798662,shivani@gmail.com
+Arpita,Patidar,12 Street,Ujjain,Madhya Pradesh,456160,9023254862,arpita@gmail.com
+Ronak,Sharma,13 Street,Ujjain,Madhya Pradesh,456010,6264589721,ronak@gmail.com
+Roanak,Patil,14 Street,Indore,Madhya Pradesh,456611,7788256341,abhishek@gmail.com
+Manoj,Tiwari,15 Street,Indore,Madhya Pradesh,4566612,8090263548,manoj@gmail.com
