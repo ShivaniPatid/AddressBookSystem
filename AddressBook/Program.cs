@@ -66,6 +66,20 @@
                     RetrieveEntries entries=new RetrieveEntries();
                     entries.GetEntries();
                     break;
+                case 11:
+
+                    UpdateContact update = new UpdateContact();
+                    ContactModel contact = new ContactModel();
+
+                    contact.FirstName = "Muskan";
+                    contact.Address = "Ujjain";
+                    contact.City = "Ujjain";
+                    contact.Zip = 456601;
+
+                    update.Equals(contact);
+
+                    break;
+
                 default:
                     Console.WriteLine("Choose a appropriate option");
                     break;
