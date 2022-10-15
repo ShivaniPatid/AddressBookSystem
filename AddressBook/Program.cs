@@ -27,6 +27,8 @@
             Console.WriteLine("8. Read/Write the Address Book with Persons Contact as CSV File");
             Console.WriteLine("9. Read or Write the Address Book with Persons Contact as JSON File");
             Console.WriteLine("10. Get all enteries to DB");
+            Console.WriteLine("11. Update Enteries");
+            Console.WriteLine("12. the size of address book by City and State");
             int option=Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -79,7 +81,10 @@
                     update.Equals(contact);
 
                     break;
-
+                case 12:
+                    RetrievePerson person = new RetrievePerson();
+                    person.RetrievePersonDetails();
+                    break;
                 default:
                     Console.WriteLine("Choose a appropriate option");
                     break;
