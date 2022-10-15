@@ -28,7 +28,8 @@
             Console.WriteLine("9. Read or Write the Address Book with Persons Contact as JSON File");
             Console.WriteLine("10. Get all enteries to DB");
             Console.WriteLine("11. Update Enteries");
-            Console.WriteLine("12. the size of address book by City and State");
+            Console.WriteLine("12. Retrive enteries by City and State");
+            Console.WriteLine("13. Add Contacts to the address book database");
             int option=Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -84,6 +85,20 @@
                 case 12:
                     RetrievePerson person = new RetrievePerson();
                     person.RetrievePersonDetails();
+                    break;
+                case 13:
+                    InsertContact insert = new InsertContact();
+                    ContactModel contacts = new ContactModel();
+                    contacts.FirstName = "Saloni";
+                    contacts.LastName = "Sharma";
+                    contacts.Address = "Indore";
+                    contacts.City = "Indore";
+                    contacts.State = "Madhya Pradesh";
+                    contacts.Zip = 456661;
+                    contacts.PhoneNumber = 7755869423;
+                    contacts.Email = "saloni@gmail.com";
+
+                    insert.AddContact(contacts);
                     break;
                 default:
                     Console.WriteLine("Choose a appropriate option");
