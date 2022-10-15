@@ -26,6 +26,7 @@
             Console.WriteLine("7. Read or Write the Address Book with Persons Contact into a File using File IO");
             Console.WriteLine("8. Read/Write the Address Book with Persons Contact as CSV File");
             Console.WriteLine("9. Read or Write the Address Book with Persons Contact as JSON File");
+            Console.WriteLine("10. Get all enteries to DB");
             int option=Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -60,6 +61,10 @@
                 case 9:
                     PersonContactsUsingJSONFile.Serialize(list);
                     PersonContactsUsingJSONFile.Deserialize();
+                    break;
+                case 10:
+                    RetrieveEntries entries=new RetrieveEntries();
+                    entries.GetEntries();
                     break;
                 default:
                     Console.WriteLine("Choose a appropriate option");
