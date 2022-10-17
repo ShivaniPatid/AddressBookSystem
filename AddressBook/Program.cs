@@ -100,6 +100,20 @@
 
                     insert.AddContact(contacts);
                     break;
+                case 14:
+                    InsertContactUsingThread insertcontact = new InsertContactUsingThread();
+                    ContactModel contacts1 = new ContactModel();
+                    contacts1.FirstName = "Disha";
+                    contacts1.LastName = "Sharma";
+                    contacts1.Address = "Indore";
+                    contacts1.City = "Indore";
+                    contacts1.State = "Madhya Pradesh";
+                    contacts1.Zip = 456661;
+                    contacts1.PhoneNumber = 7755869423;
+                    contacts1.Email = "saloni@gmail.com";
+
+                    insertcontact.AddContact(contacts1);
+                    break;
                 default:
                     Console.WriteLine("Choose a appropriate option");
                     break;
